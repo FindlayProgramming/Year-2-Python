@@ -77,7 +77,13 @@ def profit_calculation(cost, sell, inventory):
     sell_price = sell - cost
     if sell - cost:
         inventory - 1
-    print(sell_price)
+    total = str(round(sell_price, 2))
+    print(total)
     print(inventory)
+    full_sell = sell * inventory
+    full_cost = cost * inventory
+    full_profit = full_sell - full_cost
+    full = str(round(full_profit, 2))
+    print(full)
 profit_calculation(32.67, 45, 1200)
 
