@@ -41,14 +41,13 @@ def sum_of_two(num1, num2):
 sum_of_two(5, 7)
 
 def divide_multiply(num1, num2):
-    multiples_of_seven = [7, 14, 21, 28, 35, 42, 49, 56, 63, 70]
-    multiples_of_eleven = [11, 22, 33, 44, 55, 66, 77, 88, 99, 110]
-    if num1 in multiples_of_seven:
-        print(num1 / num2)
-    if num2 in multiples_of_eleven:
-        print(num1 * num2)
-    elif num1 and num2 in multiples_of_seven or multiples_of_eleven:
-        print('Try again.')
+    for i in range (num1, num2):
+        if (i % 7 ==0):
+            print(num1 / num2)
+        if (i % 11 == 0):
+            print(num1 * num2)
+        elif (i % 7 ==0) or (i % 11 == 0):
+            print('Try again.')
 divide_multiply(4, 5)
     
 
