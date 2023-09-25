@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<person gender="male">
+    <name>Findlay</name>
+    <country>UK</country>
+    <skills>
+        <skill>Python</skill>
+        <skill>HTML</skill>
+        <skill>CSS</skill>
+    </skills>
+</person>
